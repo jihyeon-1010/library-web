@@ -1,0 +1,50 @@
+.return-btn {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.return-pending {
+    background-color: #ff9800;
+    margin-top: 0;
+    cursor: pointer;
+}
+
+.return-completed {
+    background-color: #4caf50; 
+    cursor: not-allowed;
+    pointer-events: none;
+    margin-top: 0;
+}
+
+.return-completed:disabled {
+    opacity: 0.5;
+}
+
+.history-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #242424;
+    border-radius: 5px;
+    color: #e0e0e0;
+}
+
+.history-item span {
+    width: 20%;
+    text-align: center;
+}
+
+.history-item span:nth-child(1) {
+    width: 30%;
+}
+
+.return-btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+}
