@@ -47,12 +47,12 @@ const Members = () => {
         await axios.post('/user', newMember)
             .then(response => {
                 alert('회원 등록에 성공했습니다.')
-                console.log('회원 등록 성공', response.data);
+                console.log('회원 등록 성공', response);
 
                 window.location.reload();
             })
             .catch(error => {
-                alert('회원 등록에 실패했습니다.')
+                alert(error.response.data)
                 console.log('회원 등록 실패: ', error);
             });
         
