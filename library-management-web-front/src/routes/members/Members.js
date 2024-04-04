@@ -149,7 +149,21 @@ const Members = () => {
                                 <th>가입일</th>
                             </tr>
                         </thead>
-
+                        <tbody>
+                            {members.slice().sort((a, b) => new Date(b.regDate) - new Date(a.regDate)).map(member => (
+                                <tr key={member.id}>
+                                    <td>{member.name}</td>
+                                    <td>{member.birthDate}</td>
+                                    <td>{insertHyphensInPhoneNumber(member.phoneNumber)}</td>
+                                    <td>{member.address}</td>
+                                    <td>{member.regDate}</td>
+                                    <td>
+                                        <button onClick={() => openModal(member)}>수정</button>
+                                        <button onClick={() => handleDeleteMember(member.name, member.id)}>삭제</button>
+                                    </td>
+                                </tr>
+                            ))} 
+                        </tbody>
                     </table>
                 </div>
             </div>
