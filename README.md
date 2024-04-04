@@ -12,7 +12,7 @@
   |Tools / Test Code| <img src="https://img.shields.io/badge/Visual Studio Code-007ACC?style=flat&logo=visualstudiocode&logoColor=white" /> <img src="https://img.shields.io/badge/IntelliJ IDEA-000000?style=flat&logo=intellijidea&logoColor=white" /> <img src="https://img.shields.io/badge/JUnit5-25A162?style=flat&logo=junit5&logoColor=white"/>
 
   <h2>ERD</h2>
-  <img src="https://github.com/jihyeon-1010/library-web/assets/119498515/2997f27d-739e-4d4c-9664-01ce5f7f3f4e" width="60%">
+  <img src="https://github.com/jihyeon-1010/library-web/assets/119498515/280cc397-242b-468e-894a-f4f97e966bd5" width="60%">
 
   <h2>API 명세서</h2>
   <a href="https://s-organization-274.gitbook.io/untitled/"><img src="https://img.shields.io/badge/GitBook-BBDDE5?style=flat&logo=gitbook&logoColor=black" /></a> <span style="font-size:25">← 링크 바로가기</span>
