@@ -1,6 +1,5 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=도서%20관리%20애플리케이션&fontSize=70" />
-
 <div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=도서%20관리%20애플리케이션&fontSize=70" />
   <h2>🔧 기술 스택</h2>
   
   |구분|상세내용
