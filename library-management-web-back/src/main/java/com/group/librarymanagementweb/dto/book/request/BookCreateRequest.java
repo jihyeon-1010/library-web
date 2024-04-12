@@ -5,7 +5,6 @@ import lombok.Getter;
 
 @Getter
 public class BookCreateRequest {
-
     private Long id;
     private String name;
     private String author;

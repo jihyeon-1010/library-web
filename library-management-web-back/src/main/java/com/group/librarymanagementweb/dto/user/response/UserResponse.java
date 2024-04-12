@@ -2,18 +2,19 @@ package com.group.librarymanagementweb.dto.user.response;
 
 import com.group.librarymanagementweb.domain.book.Book;
 import com.group.librarymanagementweb.domain.user.User;
+import lombok.Getter;
 
 import java.time.LocalDate;
 import java.util.List;
 
+@Getter
 public class UserResponse {
-
-    private long id;
-    private String name;
-    private String birthDate;
-    private String phoneNumber;
-    private String address;
-    private LocalDate regDate;
+    private final long id;
+    private final String name;
+    private final String birthDate;
+    private final String phoneNumber;
+    private final String address;
+    private final LocalDate regDate;
 
     public UserResponse(long id, String name, String birth_date, String phone_number, String address, LocalDate reg_date) {
         this.id = id;
@@ -33,27 +34,4 @@ public class UserResponse {
         this.regDate = user.getRegDate();
     }
 
-    public Long getId() {
-        return id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getBirthDate() {
-        return birthDate;
-    }
-
-    public String getPhoneNumber() {
-        return phoneNumber;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public LocalDate getRegDate() {
-        return regDate;
-    }
 }

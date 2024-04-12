@@ -5,7 +5,6 @@ import lombok.Getter;
 
 @Getter
 public class BookResponse {
-
     private final long id;
     private final String name;
     private final String author;
@@ -24,5 +23,4 @@ public class BookResponse {
         this.author = book.getAuthor();
         this.publisher = book.getPublisher();
     }
-
 }

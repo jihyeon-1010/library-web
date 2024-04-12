@@ -8,7 +8,6 @@ import java.util.Date;
 
 @Getter
 public class UserCreateRequest {
-
     private String name;
     private String birth_date;
     private String phone_number;

@@ -1,17 +1,19 @@
 package com.group.librarymanagementweb.dto.user.response;
 
 import com.group.librarymanagementweb.domain.user.loanhistory.UserLoanHistory;
+import lombok.Getter;
 
 import java.time.LocalDate;
 
+@Getter
 public class UserLoanResponse {
-    private long id;
-    private long bookId;
-    private String name;
-    private String author;
-    private String publisher;
-    private LocalDate loanDate;
-    private boolean isReturn;
+    private final long id;
+    private final long bookId;
+    private final String name;
+    private final String author;
+    private final String publisher;
+    private final LocalDate loanDate;
+    private final boolean isReturn;
 
     public UserLoanResponse(UserLoanHistory userLoanHistory) {
         this.id = userLoanHistory.getId();
@@ -21,30 +23,6 @@ public class UserLoanResponse {
         this.publisher = userLoanHistory.getBook().getPublisher();
         this.loanDate = userLoanHistory.getLoanDate();
         this.isReturn = userLoanHistory.isReturn();
-    }
-
-    public long getId() {
-        return id;
-    }
-
-    public long getBookId() {
-        return bookId;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getAuthor() {
-        return author;
-    }
-
-    public String getPublisher() {
-        return publisher;
-    }
-
-    public LocalDate getLoanDate() {
-        return loanDate;
     }
 
     public boolean isReturn() {
